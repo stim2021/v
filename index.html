@@ -1,0 +1,52 @@
+<html>
+
+<!--
+  Hi! :) If you like this, be sure to:
+	 - check out the matching blog post https://medium.com/@stephen.cook/mario-kart-css-7572bd2ce608
+	 - follow me on Twitter https://twitter.com/StephenCookDev
+-->
+
+<head>
+	<title>Mario Kart</title>
+	<meta charset="UTF-8" />
+
+	<link rel="stylesheet" href="./main.css" />
+	<link rel="stylesheet" href="./background.css" />
+	<link rel="stylesheet" href="./character-select.css" />
+	<link rel="stylesheet" href="./road.css" />
+	<link rel="stylesheet" href="./trees.css" />
+	<link rel="stylesheet" href="./driver.css" />
+	<link rel="stylesheet" href="./mario.css" />
+	<link rel="stylesheet" href="./bowser.css" />
+</head>
+
+<body>
+	<!-- Begin the "13 lines of neccesary HTML body" -->
+	<div class="character-select" tabindex="1">Switch Character</div>
+	<input type="radio" name="character-select" id="mario-character-select" value="mario" checked />
+	<label for="mario-character-select"></label>
+	<input type="radio" name="character-select" id="bowser-character-select" value="bowser" />
+	<label for="bowser-character-select"></label>
+	<input class="controller" type="search" pattern=".*a" placeholder=" " title="Press (a) to turn left, and (d) to turn right" autofocus />
+	<div class="output">
+		<div class="road"></div>
+		<div class="trees"></div>
+		<div class="driver mario"></div>
+		<div class="driver bowser"></div>
+		<div class="keyboard"></div>
+	</div>
+
+	<!-- The following HTML isn't really needed for the game, so I'm not counting it! :) -->
+	<div class="explanation" tabindex="2">
+		<h1>🏎 Pure CSS Mario Kart 🏁</h1>
+		<h2>Controls</h2>
+		<p>The controls are <a href="https://en.wikipedia.org/wiki/Arrow_keys#WASD_keys">WASD</a>, so "a" to turn left, and "d" to turn right</p>
+		<h2>How Did You Do This?</h2>
+		<p>You can <a href="https://medium.com/@stephen.cook/mario-kart-css-7572bd2ce608">read more in this post</a>.</p>
+		<h2>Why Did You Do This?</h2>
+		<p>I believe <a href="https://www.youtube.com/watch?v=9nazm3_OXac">Ian Malcolm nailed this question</a>.</p>
+	</div>
+	<input type="button" value="(close)" />
+</body>
+
+</html>
